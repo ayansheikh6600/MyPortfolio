@@ -4,26 +4,28 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileNav, SetMObileNav] = useState(false);
-  const Pages = [{
-    Page : "Home",
-    path : "/"
-  },
-  {
-    Page : "About",
-    path : "/about"
-  },
-  {
-    Page : "Contact",
-    path : "/contact"
-  },
-  {
-    Page : "Education",
-    path : "/education"
-  },
-  {
-    Page : "Skills",
-    path : "/skills"
-  }];
+  const Pages = [
+    {
+      Page: "Home",
+      path: "/",
+    },
+    {
+      Page: "About",
+      path: "/about",
+    },
+    {
+      Page: "Contact",
+      path: "/contact",
+    },
+    {
+      Page: "Education",
+      path: "/education",
+    },
+    {
+      Page: "Skills",
+      path: "/skills",
+    },
+  ];
 
   const mainDivCSS = `w-full p-3 ${AppTheme.ProfileBackColor}`;
   return (
@@ -36,14 +38,18 @@ const Navbar = () => {
           <ul className="flex w-[500px] justify-between p-2 text-white transition-all">
             {Pages.map((obj, index) => {
               return (
-                <Link to={obj.path} className="hover:border-b-2 cursor-pointer transition-all" key={index} >
+                <Link
+                  to={obj.path}
+                  className="hover:border-b-2 cursor-pointer transition-all"
+                  key={index}
+                >
                   {obj.Page}
                 </Link>
               );
             })}
           </ul>
         </div>
-        <div className="md:hidden" onClick={()=>SetMObileNav(!mobileNav)}>
+        <div className="md:hidden" onClick={() => SetMObileNav(!mobileNav)}>
           <div className="space-y-2">
             <div className="w-8 h-1 bg-white rounded-sm"></div>
             <div className="w-8 h-1 bg-white rounded-sm"></div>

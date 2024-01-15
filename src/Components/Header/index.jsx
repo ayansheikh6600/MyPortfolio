@@ -5,7 +5,28 @@ import Navbar from "../Navbar";
 import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
-  const ProfileDivCSS = `w-[400px] h-[400px] mx-auto`;
+
+  const socialMediaIcons =[
+    {
+     Name : "Github",
+     Icon :"fa-brands fa-github"
+    },
+    {
+     Name : "Facebook",
+     Icon :"fa-brands fa-facebook"
+    },
+    {
+     Name : "Instagram",
+     Icon :"fa-brands fa-instagram"
+    },
+    {
+     Name : "LinkedIn",
+     Icon :"fa-brands fa-linkedin"
+    },
+  ]
+
+
+
   return (
     <div className="w-full ">
       <Navbar />
@@ -44,7 +65,14 @@ const Header = () => {
             <div className="bg-gray-400 border border-gray-600 p-2 w-[120px] text-center text-gray-700 rounded-[30px]">
               Contact Us
             </div>
+            
           </div>
+          {/* <ul className="">
+            {socialMediaIcons.map((item, index)=>{
+              return(
+              <li><i className={item.Icon}></i>{item.Name}</li>)
+            })}
+          </ul> */}
         </div>
         <div className="w-full sm:block hidden">
           <div
