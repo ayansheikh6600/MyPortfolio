@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../../Components";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const skillData = [
@@ -110,7 +111,10 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="w-full pt-10 bg-gradient-to-b from-white via-[#637ff9] to-[#5271FF]">
+    <div
+      id="skills"
+      className="w-full pt-10 bg-gradient-to-b from-white via-[#637ff9] to-[#5271FF]"
+    >
       {/* <Navbar/> */}
       <div className="w-[85%] p-4  m-auto  ">
         <div className="p-3">
@@ -123,13 +127,15 @@ const Skills = () => {
         <div className="w-[100%]  bg-opacity-[40%] mt-4  py-4 rounded-lg bg-black mx-auto  grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-6 flex-wrap ">
           {skillData.map((item, index) => {
             return (
-              <div
-                key={index}
-                className="sm:w-[100px] w-[80%] h-[130px] mx-auto my-5 cursor-pointer bg-black bg-opacity-[70%] hover:bg-opacity-[100%] text-center flex flex-col justify-center items-center text-white rounded-lg"
-              >
-                <img src={item.icon} className="w-[50px]" alt="" />
-                <h3>{item.name}</h3>
-              </div>
+              <motion.div className="" animate={{y:10}}>
+                <div
+                  key={index}
+                  className="sm:w-[100px] w-[80%] h-[130px] mx-auto my-5 cursor-pointer bg-black bg-opacity-[70%] hover:bg-opacity-[100%] text-center flex flex-col justify-center items-center text-white rounded-lg"
+                >
+                  <img src={item.icon} className="w-[50px]" alt="" />
+                  <h3>{item.name}</h3>
+                </div>
+              </motion.div>
             );
           })}
         </div>
