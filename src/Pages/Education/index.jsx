@@ -5,9 +5,8 @@ import ProfileImage from "../../assets/Ayan.jpg";
 
 const Education = () => {
   return (
-    <div className="w-full h-dvh ">
+    <div id="education" className="w-full ">
       <div className="w-full ">
-        <Navbar />
         <div className="w-[85%] mt-20 mx-auto flex items-center">
           <div className="w-full">
             <h1 className="text-4xl font-bold">

@@ -3,8 +3,8 @@ import { Navbar } from "../../Components";
 
 const Contact = () => {
   return (
-    <div className="w-full bg-[#5271FF] h-dvh">
-      <Navbar />
+    <div id="contact" className="w-full pt-10 bg-[#5271FF] ">
+      {/* <Navbar /> */}
       <div className="w-full mx-auto">
         <div className="text-center h-[200px] flex flex-col justify-center bg-white rounded-b-[130px]">
           <h1 className="sm:text-3xl text-2xl text-center font-bold text-[#5271FF]">Contact Us</h1>

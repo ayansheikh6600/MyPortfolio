@@ -21,7 +21,7 @@ const About = () => {
   
 
   return (
-    <div className="w-full h-dvh">
+    <div className="w-full p-2 pt-10" id="about">
       {/* <header className="flex h-[400px] bg-white w-[90%] mx-auto">
         <div className="w-[50%] bg-white flex flex-col justify-center pl-7">
           <h1 className="text-4xl font-bold">Ayan Sheikh</h1>
@@ -47,7 +47,7 @@ const About = () => {
           <img src={Profile} className="w-[400px] h-400px]" alt="" />
         </div>
       </header> */}
-      <Header />
+      {/* <Header /> */}
       <section className="w-[90%] mx-auto">
         <h2 className="text-3xl mb-2 font-semibold">About Me</h2>
         <div className="w-full flex flex-col-reverse mt-8 items-center md:flex-row">
@@ -55,8 +55,8 @@ const About = () => {
           <ul className="list-disc flex flex-col  sm:gap-3 gap-1">
           {pointlists.map((item, index)=>{
             return(
-              <><li className="text-lg" key={index}>{item}</li> 
-              <hr /></>
+              <li className="text-lg" key={index}>{item}</li> 
+              
               
             )
           })}

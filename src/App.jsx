@@ -6,18 +6,26 @@ import { Body, Header, Navbar } from './Components'
 import { Route, Routes } from 'react-router-dom'
 import { About, Contact, Education, Skills } from './Pages'
 
+
 function App() {
+
 
 
   return (
     <>
-      <Routes>
-        <Route path='/' element={<><Header/> <Body/> </>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/skills' element={<Skills/>}/>
-        <Route path='/education' element={<Education/>}/>
-      </Routes>
+    <Navbar/>
+      <Header/>
+      <Body/>
+      <About/>
+      <Skills/>
+      <Education/>
+      <Contact/>
+
+      <div className='w-full h-[80px] flex justify-end items-center sticky bottom-0 right-0'>
+        <div className='bg-blue-500 w-[60px] border-2 border-white rounded-xl h-[60px] mr-8'>
+        <i className="fa-solid fa-arrow-up-long"></i>
+        </div>
+      </div>
       
       
     </>

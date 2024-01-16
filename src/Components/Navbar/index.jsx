@@ -7,27 +7,27 @@ const Navbar = () => {
   const Pages = [
     {
       Page: "Home",
-      path: "/",
+      path: "#top",
     },
     {
       Page: "About",
-      path: "/about",
+      path: "#about",
     },
     {
       Page: "Contact",
-      path: "/contact",
+      path: "#contact",
     },
     {
       Page: "Education",
-      path: "/education",
+      path: "#education",
     },
     {
       Page: "Skills",
-      path: "/skills",
+      path: "#skills",
     },
   ];
 
-  const mainDivCSS = `w-full p-3 ${AppTheme.ProfileBackColor}`;
+  const mainDivCSS = `w-full p-3 transition-all sticky top-0 ${AppTheme.ProfileBackColor}`;
   return (
     <div className={mainDivCSS}>
       <div className="flex items-center justify-between w-[85%] mx-auto">
@@ -38,13 +38,13 @@ const Navbar = () => {
           <ul className="flex w-[500px] justify-between p-2 text-white transition-all">
             {Pages.map((obj, index) => {
               return (
-                <Link
-                  to={obj.path}
+                <a
+                  href={obj.path}
                   className="hover:border-b-2 cursor-pointer transition-all"
                   key={index}
                 >
                   {obj.Page}
-                </Link>
+                </a>
               );
             })}
           </ul>
@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
 
       {mobileNav ? (
-        <div className="mt-2 p-2 text-white">
+        <div className="mt-2 p-2 text-white transition-all">
           <ul className="flex flex-col">
             {Pages.map((obj, index) => {
               return (

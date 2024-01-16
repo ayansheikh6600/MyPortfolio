@@ -2,7 +2,7 @@ import React from "react";
 
 const Body = () => {
   return (
-    <div className="w-full p-5">
+    <div  className="w-full p-5">
       <div className="sm:w-[85%] mx-auto">
         <h3 className="text-3xl">Latest Project</h3>
 
