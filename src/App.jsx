@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Body, Header, Navbar } from './Components'
 import { Route, Routes } from 'react-router-dom'
-import { About, Contact, Education, Login, Skills } from './Pages'
+import { About, Contact, DashBoard, Education, Login, Skills } from './Pages'
 
 
 function App() {
@@ -32,7 +32,8 @@ function App() {
          
        </>
     } />
-    <Route path='/login' element={<Login/>}/> 
+    <Route path='/login' element={<Login/>}/>
+     <Route path='/dashboard' element={<DashBoard/>}/> 
    </Routes>
   )
 }
