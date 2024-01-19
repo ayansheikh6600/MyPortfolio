@@ -63,9 +63,9 @@ const Navbar = () => {
           <ul className="flex flex-col">
             {Pages.map((obj, index) => {
               return (
-                <Link to={obj.path} key={index} className="border-b-2 p-1">
+                <a href={obj.path} key={index} className="border-b-2 p-1">
                   {obj.Page}
-                </Link>
+                </a>
               );
             })}
           </ul>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Navigate } from 'react-router-dom'
 
 const DashBoard = () => {
-    const loggedin = localStorage.getItem("login")
+    const loggedin = localStorage.getItem("/AT/")
   return (
     loggedin === "true" ? <Navigate to='/'/> :  <>
     <div className='w-full h-dvh flex flex-col justify-center'>
