@@ -1,22 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Body = () => {
+const Projects = () => {
   return (
-    <div  className="w-full p-5">
-      <div className="sm:w-[85%] mx-auto" data-aos="fade-down">
-      <div className="flex justify-between items-center">
-      <h3 className="sm:text-3xl text-xl font-semibold text-[#5271FF]">Pinned Project</h3>
-      <Link to="/allprojects" className="sm:text-2xl text-lg font-semibold hover:text-[#5271FF] transition-all">See All</Link>
-      </div>
-        
+    <div className="w-full h-dvh bg-red-500">
+      <div className="w-[90%] mx-auto">
+        <div className="p-3">
+          <Link to="/" className="text-2xl">{"<-- Back"}</Link>
+        </div>
 
         <div className="flex flex-col gap-5 mt-4">
-          <div className="sm:flex w-full justify-center items-center rounded-3xl bg-gray-400">
+          <div className="sm:flex w-full justify-center rounded-3xl bg-gray-400">
             <div className="h-[250px] sm:h-[300px] w-[100%] sm:w-[30%] "></div>
-            <div className=" sm:w-[70%] w-[100%] p-2  flex flex-col justify-between">
-              <div>
+            <div className=" sm:w-[70%] w-[100%] p-2 py-5  flex flex-col justify-between">
+              <div className="">
                 <h1 className="sm:text-3xl text-2xl font-semibold p-2">
                   Ayan aaaaaaaaaaaaaaaaa
                 </h1>
@@ -39,4 +36,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default Projects;

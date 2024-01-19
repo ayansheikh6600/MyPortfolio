@@ -31,7 +31,7 @@ const Header = () => {
     <div id="top" className="w-full ">
       {/* <Navbar /> */}
       <div className="w-[85%] mt-20 mx-auto flex items-center">
-        <div className="w-full">
+        <div className="w-full" data-aos="fade-right">
           <h1 className="text-4xl font-bold">
             Hi, I'm <span className="text-[#5271FF]">Ayan Sheikh</span>. <br />{" "}
             <span className="text-sm">
@@ -77,6 +77,7 @@ const Header = () => {
         <div className="w-full sm:block hidden">
           <div
             className={"md:w-[400px] md:h-[400px]  w-[300px] h-[300px] mx-auto"}
+            data-aos="fade-left"
           >
             <img src={ProfileImage} alt="" />
           </div>

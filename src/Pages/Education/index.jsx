@@ -5,10 +5,10 @@ import ProfileImage from "../../assets/Ayan.jpg";
 
 const Education = () => {
   return (
-    <div id="education" className="w-full ">
+    <div id="education" className="w-full overflow-hidden">
       <div className="w-full ">
         <div className="w-[85%] mt-20 mx-auto flex items-center">
-          <div className="w-full">
+          <div className="w-full" data-aos="fade-right">
             <h1 className="text-4xl font-bold">
               Hi, I'm <span className="text-[#5271FF]">Ayan Sheikh</span>.{" "}
               <br />{" "}
@@ -42,7 +42,7 @@ const Education = () => {
             })}
           </ul> */}
           </div>
-          <div className="w-full sm:block hidden">
+          <div className="w-full sm:block hidden" data-aos="fade-left">
             <div
               className={
                 "md:w-[300px] md:h-[400px]  w-[240px] h-[300px] mx-auto"
@@ -56,7 +56,7 @@ const Education = () => {
             </div>
           </div>
         </div>
-        <div className="w-[95%] mx-auto">
+        <div className="w-[95%] mx-auto" data-aos="fade-up">
           <h1 className="text-3xl font-bold">Education</h1>
           <div className="w-full p-3">
             <h1 className="text-lg font-semibold">Matriculation (2021-2022)</h1>

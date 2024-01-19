@@ -14,10 +14,6 @@ const Navbar = () => {
       path: "#about",
     },
     {
-      Page: "Contact",
-      path: "#contact",
-    },
-    {
       Page: "Education",
       path: "#education",
     },
@@ -25,16 +21,20 @@ const Navbar = () => {
       Page: "Skills",
       path: "#skills",
     },
+    {
+      Page: "Contact",
+      path: "#contact",
+    },
   ];
 
   const mainDivCSS = `w-full p-3 transition-all sticky top-0 ${AppTheme.ProfileBackColor}`;
   return (
-    <div className={mainDivCSS}>
+    <div className={mainDivCSS} >
       <div className="flex items-center justify-between w-[85%] mx-auto">
         <div>
           <h1 className="text-4xl">LOGO</h1>
         </div>
-        <div className="md:block hidden">
+        <div className="md:block hidden" >
           <ul className="flex w-[500px] justify-between p-2 text-white transition-all">
             {Pages.map((obj, index) => {
               return (
@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
 
       {mobileNav ? (
-        <div className="mt-2 p-2 text-white transition-all">
+        <div className="mt-2 p-2 text-white transition-all" data-aos="fade-down" >
           <ul className="flex flex-col">
             {Pages.map((obj, index) => {
               return (

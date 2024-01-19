@@ -3,7 +3,9 @@ import Contact from "./Contact"
 import DashBoard from "./Dashboard"
 import Education from "./Education"
 import Login from "./Login"
+import Projects from "./Projects"
 import Skills from "./Skills"
+
 
 export {
     Contact,
@@ -11,5 +13,6 @@ export {
     Skills,
     Education,
     Login,
-    DashBoard
+    DashBoard,
+    Projects
 }

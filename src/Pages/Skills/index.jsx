@@ -127,15 +127,15 @@ const Skills = () => {
         <div className="w-[100%]  bg-opacity-[40%] mt-4  py-4 rounded-lg bg-black mx-auto  grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-6 flex-wrap ">
           {skillData.map((item, index) => {
             return (
-              <motion.div key={index} className="" animate={{y:10}}>
-                <div
-                  
+              
+                <div key={index}
+                data-aos="fade-down"
                   className="sm:w-[100px] w-[80%] h-[130px] mx-auto my-5 cursor-pointer bg-black bg-opacity-[70%] hover:bg-opacity-[100%] text-center flex flex-col justify-center items-center text-white rounded-lg"
                 >
                   <img src={item.icon} className="w-[50px]" alt="" />
                   <h3>{item.name}</h3>
                 </div>
-              </motion.div>
+             
             );
           })}
         </div>
