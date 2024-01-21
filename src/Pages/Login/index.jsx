@@ -24,7 +24,7 @@ const Login = () => {
   ) : (
     <>
       <div className="w-full bg-[#5271FF] h-dvh">
-        <div className="w-[90%]   mx-auto flex flex-col h-full justify-center">
+        {/* <div className="w-[90%]   mx-auto flex flex-col h-full justify-center">
           <h1 className="text-4xl text-center text-white font-semibold">
             Login
           </h1>
@@ -54,7 +54,8 @@ const Login = () => {
               Login
             </button>
           </form>
-        </div>
+        </div> */}
+        <iframe src="https://ayansheikh6600.github.io/CRUD-With-FireBase/"  frameborder="0"  className="absolute top-0 left-0 right-0 bottom-0 border-none"></iframe>
       </div>
     </>
   );
