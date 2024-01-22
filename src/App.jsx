@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -15,6 +15,7 @@ AOS.init({
 
 
 function App() {
+
   function scrollToTop() {
     // Get the current scroll position
     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -26,6 +27,8 @@ function App() {
         window.scrollTo(0, currentScroll - currentScroll / 10); // You can adjust the animation speed by changing the divisor
     }
 }
+
+
 
 
 

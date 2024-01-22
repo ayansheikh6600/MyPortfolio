@@ -27,10 +27,10 @@ const Body = () => {
 
         {Repos&& Repos.map((item , index)=>{
           return(
-            <div className="flex flex-col gap-5 mt-4" data-aos="fade-down">
+            <div key={index} className="flex flex-col gap-5 mt-4" data-aos="fade-down">
           <div className="sm:flex w-full justify-center  rounded-3xl bg-gray-300">
             <div className="h-[250px] p-3  sm:h-[300px] w-[100%] sm:w-[30%] ">
-            <iframe src={item.homepageUrl}  frameborder="0"  className="w-full h-full"></iframe>
+            <iframe src={item.homepageUrl}  frameBorder="0"  className="w-full border-4 border-[#5271FF] h-full rounded-xl"></iframe>
             </div>
             <div className=" sm:w-[70%] w-[100%] p-2  flex flex-col justify-between">
               <div>
