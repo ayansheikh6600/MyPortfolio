@@ -54,8 +54,6 @@ function App() {
        </>
     } />
     <Route path='/allprojects' element={<Projects/>}/>
-    <Route path='/login' element={<Login/>}/>
-     <Route path='/dashboard' element={<DashBoard/>}/> 
    </Routes>
   )
 }

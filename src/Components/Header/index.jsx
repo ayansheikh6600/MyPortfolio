@@ -34,7 +34,7 @@ const Header = () => {
       <div className="w-[85%] mt-20 mx-auto flex items-center">
         <div className="w-full" data-aos="fade-right">
           <h1 className="text-4xl font-bold">
-           <Link to="login" className="cursor-text"> Hi</Link>, I'm <span className="text-[#5271FF]">Ayan Sheikh</span>. <br />{" "}
+           Hi, I'm <span className="text-[#5271FF]">Ayan Sheikh</span>. <br />{" "}
             <span className="text-sm">
             <TypeAnimation
             
