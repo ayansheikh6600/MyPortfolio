@@ -34,6 +34,7 @@ const Navbar = () => {
         <div className="ml-6">
           <h1 className="text-4xl">LOGO</h1>
         </div>
+        <Link className="hidden" to="/login">Login</Link>
         <div className="md:block hidden bg-gradient-to-bl to-[#5271FF] via-purple-500 from-pink-500 p-3 rounded-es-[33px]" >
           <ul className="flex w-[500px]  justify-between p-2 text-white transition-all">
             {Pages.map((obj, index) => {

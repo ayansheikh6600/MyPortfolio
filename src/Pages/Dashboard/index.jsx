@@ -2,9 +2,9 @@ import React from 'react'
 import { Navigate } from 'react-router-dom'
 
 const DashBoard = () => {
-    const loggedin = localStorage.getItem("/AT/")
-  return (
-    loggedin === "true" ? <Navigate to='/'/> :  <>
+    const loggedin = localStorage.getItem("both")
+    console.log(loggedin);
+  return !loggedin ? ( <Navigate to='/'/> ) : ( <>
     <div className='w-full h-dvh flex flex-col justify-center'>
         <div className='w-[90%] mx-auto bg-[#5271FF] py-10  rounded-2xl'>
             <h1 className='text-4xl text-center text-white font-semibold'>Add Project</h1>

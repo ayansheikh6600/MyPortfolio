@@ -20,8 +20,8 @@ const Body = () => {
     <div  className="w-full p-5">
       <div className="sm:w-[85%] mx-auto" data-aos="fade-down">
       <div className="flex justify-between items-center">
-      <h3 className="sm:text-3xl text-xl font-semibold text-[#5271FF]">Pinned Project</h3>
-      <Link to="/allprojects" className="sm:text-2xl text-lg font-semibold hover:text-[#5271FF] transition-all">See All</Link>
+      <h3 className="sm:text-3xl text-xl font-semibold bg-gradient-to-b from-[#5271FF] via-purple-500 to-pink-500 inline-block bg-clip-text text-transparent">Hot Project</h3>
+      <Link to="/allprojects" className="sm:text-2xl text-lg font-semibold hover:bg-gradient-to-bl from-[#5271FF] via-purple-500 to-pink-500 inline-block hover:bg-clip-text hover:text-transparent hover:transition-all">See All</Link>
       </div>
         
 
