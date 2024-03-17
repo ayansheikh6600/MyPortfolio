@@ -65,7 +65,7 @@ const About = () => {
           <div className="md:w-[30%] w-full flex flex-col justify-center items-center text-center" data-aos="fade-left">
             <img src={AyanImage} className="w-[140px] sm:w-[200px] md:w-[250px]  rounded-lg shadow-[23px_-23px_5px_0px_rgba(82,113,255,1.3)]  hover:shadow-[-23px_23px_5px_0px_rgba(82,113,255,1.3)] transition-all cursor-pointer" alt="" />
             <h1 className="text-xl font-bold mt-7">Ayan Sheikh</h1>
-            <button className="bg-[#5271FF] hover:bg-[#2d54ff]  p-3 mt-2 text-white font-bold rounded-lg"><a href="">Resume</a></button>
+            <button className="bg-gradient-to-bl from-[#5271FF] via-purple-500 to-pink-500 hover:bg-[#2d54ff]  p-3 mt-2 text-white font-bold rounded-lg"><a href="">Resume</a></button>
           </div>
         </div>
         

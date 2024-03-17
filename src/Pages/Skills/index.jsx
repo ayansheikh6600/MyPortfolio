@@ -113,13 +113,13 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="w-full pt-10 bg-gradient-to-b from-white via-[#637ff9] to-[#5271FF]"
+      className="w-full pt-10 bg-gradient-to-br from-[#5271FF] via-purple-500 to-pink-500"
     >
       {/* <Navbar/> */}
       <div className="w-[85%] p-4  m-auto  ">
         <div className="p-3">
-          <h1 className="sm:text-5xl text-3xl text-center font-bold">
-            <i className="fas fa-laptop-code"></i>
+          <h1 className="sm:text-5xl text-3xl text-center font-bold text-white">
+            <i className="fas fa-laptop-code text-white"></i>
             Skills & Abilities
           </h1>
         </div>

@@ -34,7 +34,7 @@ const Header = () => {
       <div className="w-[85%] mt-20 mx-auto flex items-center">
         <div className="w-full" data-aos="fade-right">
           <h1 className="text-4xl font-bold">
-           Hi, I'm <span className="text-[#5271FF]">Ayan Sheikh</span>. <br />{" "}
+           Hi, I'm <span className="bg-gradient-to-bl from-[#5271FF] via-purple-500 to-pink-500 inline-block bg-clip-text text-transparent">Ayan Sheikh</span>. <br />{" "}
             <span className="text-sm">
             <TypeAnimation
             
@@ -60,7 +60,7 @@ const Header = () => {
             Innovation in Every Line of Code.
           </p>
           <div className="flex w-[290px] p-3 justify-between">
-            <div className="bg-[#5271FF] p-2 w-[120px] text-center text-white rounded-[30px]">
+            <div className="bg-gradient-to-bl from-[#5271FF] via-purple-500 to-pink-500 p-2 w-[120px] text-center text-white rounded-[30px]">
               About Me
             </div>
             <div className="bg-gray-400 border border-gray-600 p-2 w-[120px] text-center text-gray-700 rounded-[30px]">

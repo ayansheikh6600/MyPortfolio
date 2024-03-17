@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Body, Header, Navbar } from './Components'
+import { Body, Footer, Header, Navbar } from './Components'
 import { Route, Routes } from 'react-router-dom'
 import { About, Contact, DashBoard, Education, Login, Projects, Skills } from './Pages'
 import AOS from "aos"
@@ -36,19 +36,24 @@ function App() {
    <Routes>
     <Route path='/' element={
        <>
+       <div>
+
        <Navbar/>
          <Header/>
          <Body/>
          <About/>
          <Skills/>
          <Education/>
-         <Contact/>
-   
-         <div className='w-full h-[80px] flex justify-end items-center sticky bottom-0 right-0'>
-           <div className='bg-blue-500 w-[60px] border-2 border-white rounded-xl h-[60px] flex justify-center items-center text-xl font-semibold cursor-pointer mr-8 text-white' onClick={()=>scrollToTop()}>
+         {/* <Contact/> */}
+         <Footer/>
+         <div className='w-full h-[80px] flex justify-end items-center fixed bottom-0 right-0'>
+           <div className='bg-gradient-to-bl from-[#5271FF] via-purple-500 to-pink-500 w-[60px] border-2 border-white rounded-xl h-[60px] flex justify-center items-center text-xl font-semibold cursor-pointer mr-8 text-white' onClick={()=>scrollToTop()}>
            Top
            </div>
          </div>
+       </div>
+   
+         
          
          
        </>
