@@ -6,7 +6,7 @@ const Login = () => {
   const [loggedin, setLoggedin ] = useState("")
   const [email, setEmail ] = useState("")
   const [password, setPassword ] = useState("")
-  // const Navigation = useNavigate("")
+  const Navigation = useNavigate("")
 
   useEffect(()=>{
 
@@ -38,7 +38,7 @@ const Login = () => {
       console.log(user.uid);
 
       localStorage.setItem("/AT/",user.uid)
-      // Navigation("dashboard")
+      Navigation("/dashboard")
       // ...
     })
     .catch((error) => {
