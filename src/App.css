@@ -4,9 +4,10 @@
 
 
 body {
-    --sb-track-color: #ffffff;
+     /* --sb-track-color: #ec2c2c;  */
     --sb-thumb-color: #5271FF;
     --sb-size: 5px;
+    
   
     scrollbar-color: var(--sb-thumb-color) 
                      var(--sb-track-color);
