@@ -1,4 +1,9 @@
-import { getDownloadURL, getStorage, ref, uploadBytesResumable } from "firebase/storage";
+import {
+  getDownloadURL,
+  getStorage,
+  ref,
+  uploadBytesResumable,
+} from "firebase/storage";
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 import { collection, addDoc } from "firebase/firestore";
@@ -11,19 +16,20 @@ const DashBoard = () => {
   const [liveLink, setLiveLink] = useState();
   const [repoLink, setRepoLink] = useState();
   const [category, setCategory] = useState();
+  const [Hot, setHot] = useState();
   const loggedin = localStorage.getItem("/AT/");
 
-  const userId = '1eFEWPdNgFSmRKkcWWddASRHs942'
+  const userId = "1eFEWPdNgFSmRKkcWWddASRHs942";
 
   const imageUpload = (e) => {
     e.preventDefault();
     const storage = getStorage();
 
-    if(userId != loggedin){
-      return
+    if (userId != loggedin) {
+      return;
     }
-    if(!repoLink && !title && !desc && !category){
-      return alert("Enter Req Feilds")
+    if (!repoLink && !title && !desc && !category) {
+      return alert("Enter Req Feilds");
     }
 
     // Create the file metadata
@@ -74,28 +80,31 @@ const DashBoard = () => {
       () => {
         // Upload completed successfully, now we can get the download URL
         getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
-          
           console.log("File available at", downloadURL);
-
 
           const docRef = await addDoc(collection(db, "Projects"), {
             title,
             desc,
-            liveLink,
+            liveLink: liveLink || "",
             repoLink,
-            ImageUrl : downloadURL,
-            category
-
+            ImageUrl: downloadURL,
+            category,
+            Hot,
           });
-          console.log("Document written with ID: ", docRef.id);
+          // console.log("Document written with ID: ", docRef.id);
 
-
+          if (docRef) {
+            setCategory("")
+            setDesc("")
+            setLiveLink("")
+            setRepoLink("")
+            setTitle("")
+          }
         });
       }
     );
   };
 
-  
   // console.log(loggedin);
   return !loggedin ? (
     <Navigate to="/" />
@@ -108,7 +117,7 @@ const DashBoard = () => {
           </h1>
           <form
             // action=""
-            onSubmit={(e)=>imageUpload(e)}
+            onSubmit={(e) => imageUpload(e)}
             className=" w-[500px] flex flex-col gap-2 bg-white mx-auto p-4 py-14 rounded-3xl mt-4"
           >
             <label htmlFor="">Title:</label>
@@ -117,6 +126,7 @@ const DashBoard = () => {
               type="text"
               name=""
               id=""
+              value={title}
               placeholder="Enter Title"
               onChange={(e) => setTitle(e.target.value)}
             />
@@ -126,6 +136,7 @@ const DashBoard = () => {
               name=""
               id=""
               placeholder="Enter Description"
+              value={desc}
               onChange={(e) => setDesc(e.target.value)}
             />
             <label htmlFor="">Live Link:</label>
@@ -134,6 +145,7 @@ const DashBoard = () => {
               type="text"
               name=""
               id=""
+              value={liveLink}
               placeholder="Enter Live Link"
               onChange={(e) => setLiveLink(e.target.value)}
             />
@@ -144,6 +156,7 @@ const DashBoard = () => {
               name=""
               id=""
               placeholder="Enter Repo Link"
+              value={repoLink}
               onChange={(e) => setRepoLink(e.target.value)}
             />
             <label htmlFor="">Category:</label>
@@ -164,6 +177,21 @@ const DashBoard = () => {
                 Backend
               </option>
             </select>
+            <label htmlFor="">Hot OR Not:</label>
+            <select
+              onChange={(e) => setHot(e.target.value)}
+              className="w-full p-2 text-black rounded-lg border-2 border-[#5271FF]"
+            >
+              <option className="w-full" value="None">
+                None
+              </option>
+              <option className="w-full" value="No">
+                No
+              </option>
+              <option className="w-full" value="Yes">
+                Yes
+              </option>
+            </select>
             <label htmlFor="">Image:</label>
             <input
               className="w-full p-2 text-black rounded-lg border-2 border-[#5271FF]"
@@ -173,7 +201,10 @@ const DashBoard = () => {
               placeholder="Enter Email"
               onChange={(e) => setImage(e.target.files[0])}
             />
-            <button type="submit" className="w-full bg-gradient-to-r from-[#5271FF] via-purple-500 to-pink-500 text-white font-bold p-2 mt-3 rounded-lg">
+            <button
+              type="submit"
+              className="w-full bg-gradient-to-r from-[#5271FF] via-purple-500 to-pink-500 text-white font-bold p-2 mt-3 rounded-lg"
+            >
               Add
             </button>
           </form>

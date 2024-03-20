@@ -61,22 +61,22 @@ const Header = () => {
           <ul className="flex gap-4 mt-4 text-3xl">
             <li className="hover:bg-gradient-to-bl from-[#5271FF] via-purple-500 to-pink-500 inline-block cursor-pointer bg-clip-text hover:text-transparent">
               <a href="">
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
               </a>
             </li>
             <li className="hover:bg-gradient-to-bl from-[#5271FF] via-purple-500 to-pink-500 inline-block cursor-pointer bg-clip-text hover:text-transparent">
               <a href="">
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
               </a>
             </li>
             <li className="hover:bg-gradient-to-bl from-[#5271FF] via-purple-500 to-pink-500 inline-block cursor-pointer bg-clip-text hover:text-transparent">
               <a href="">
-                <i class="fa-brands fa-square-instagram"></i>
+                <i className="fa-brands fa-square-instagram"></i>
               </a>
             </li>
             <li className="hover:bg-gradient-to-bl from-[#5271FF] via-purple-500 to-pink-500 inline-block cursor-pointer bg-clip-text hover:text-transparent">
               <a href="">
-                <i class="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-facebook"></i>
               </a>
             </li>
           </ul>
