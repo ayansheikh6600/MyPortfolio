@@ -6,11 +6,11 @@ const Footer = () => {
 
         <div className='p-3 mx-auto w-[100%] lg:w-[60%] md:w-[80%] justify-center grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
             <div className='text-white p-5 gap-4 flex flex-col items-center justify-center'>
-                <h1 className='text-4xl  font-bold'>Logo</h1>
+                <h1 className='text-4xl  semi-bold'><span className='text-6xl italic font-bold'>AS</span> DEVELOPER</h1>
             </div>
             <div className='text-white p-5 gap-4 flex flex-col'>
                 <div>
-                    <h1 className='text-xl font-semibold'>About US</h1>
+                    <h1 className='text-xl font-semibold'>About Me</h1>
                 </div>
                 <div>
                     <p><span className='font-bold font-serif'>AS Developer</span>:  The MERN stack, comprising MongoDB, Express.js, React.js, and Node.js, is a streamlined solution for full-stack web development.</p>
