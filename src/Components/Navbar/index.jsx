@@ -29,13 +29,22 @@ const Navbar = () => {
 
   const mainDivCSS = `w-full transition-all sticky top-0 bg-white`;
   return (
-    <div className={mainDivCSS} >
+    <div className={mainDivCSS}>
       <div className="flex items-center justify-between w-full mx-auto">
         <div className="ml-6">
-          <h1 className="text-4xl "><span className="text-6xl italic font-medium bg-gradient-to-b from-[#5271FF] via-purple-500 to-pink-500 inline-block bg-clip-text text-transparent">AS</span><span className="bg-gradient-to-br from-[#5271FF] via-purple-500 to-pink-500 inline-block bg-clip-text text-transparent">DEVELOPER</span></h1>
+          <h1 className="text-4xl ">
+            <span className="text-6xl italic font-medium bg-gradient-to-b from-[#5271FF] via-purple-500 to-pink-500 inline-block bg-clip-text text-transparent">
+              AS
+            </span>
+            <span className="bg-gradient-to-br from-[#5271FF] via-purple-500 to-pink-500 inline-block bg-clip-text text-transparent">
+              DEVELOPER
+            </span>
+          </h1>
         </div>
-        <Link className="hidden" to="/login">Login</Link>
-        <div className="md:block hidden bg-gradient-to-bl to-[#5271FF] via-purple-500 from-pink-500 p-3 rounded-es-[33px]" >
+        <Link className="hidden" to="/login">
+          Login
+        </Link>
+        <div className="md:block hidden bg-gradient-to-bl to-[#5271FF] via-purple-500 from-pink-500 p-3 rounded-es-[33px]">
           <ul className="flex w-[500px]  justify-between p-2 text-white transition-all">
             {Pages.map((obj, index) => {
               return (
@@ -50,7 +59,10 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        <div className="md:hidden bg-[#5271FF] p-2 my-2 rounded-lg mr-5" onClick={() => SetMObileNav(!mobileNav)}>
+        <div
+          className="md:hidden bg-[#5271FF] p-2 my-2 rounded-lg mr-5"
+          onClick={() => SetMObileNav(!mobileNav)}
+        >
           <div className="space-y-2 ">
             <div className="w-8 h-1 bg-white rounded-sm"></div>
             <div className="w-8 h-1 bg-white rounded-sm"></div>
@@ -60,7 +72,10 @@ const Navbar = () => {
       </div>
 
       {mobileNav ? (
-        <div className="mt-2 p-2 bg-[#5271FF] text-white transition-all" data-aos="fade-down" >
+        <div
+          className="mt-2 p-2 bg-[#5271FF] text-white transition-all"
+          data-aos="fade-down"
+        >
           <ul className="flex flex-col">
             {Pages.map((obj, index) => {
               return (

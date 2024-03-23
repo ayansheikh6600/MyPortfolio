@@ -40,10 +40,7 @@ const Body = () => {
 
         {Repos &&
           Repos.map((item, index) => {
-            if(
-              item.Hot == "Yes"
-            ){
-
+            if (item.Hot == "Yes") {
               return (
                 <div
                   key={index}
@@ -90,7 +87,7 @@ const Body = () => {
                           </a>
                         </p>
                         <p className="font-semibold">
-                          Repo Link : {''}
+                          Repo Link : {""}
                           <a
                             className="font-normal hover:text-[#5271FF]"
                             target="_blank"
