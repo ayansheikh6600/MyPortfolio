@@ -94,11 +94,11 @@ const DashBoard = () => {
           // console.log("Document written with ID: ", docRef.id);
 
           if (docRef) {
-            setCategory("")
-            setDesc("")
-            setLiveLink("")
-            setRepoLink("")
-            setTitle("")
+            setCategory("");
+            setDesc("");
+            setLiveLink("");
+            setRepoLink("");
+            setTitle("");
           }
         });
       }
