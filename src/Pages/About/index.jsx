@@ -20,31 +20,7 @@ const About = () => {
 
   return (
     <div className="w-full p-2 pt-16 overflow-hidden" id="about">
-      {/* <header className="flex h-[400px] bg-white w-[90%] mx-auto">
-        <div className="w-[50%] bg-white flex flex-col justify-center pl-7">
-          <h1 className="text-4xl font-bold">Ayan Sheikh</h1>
-          <p className="font-thin">
-            <TypeAnimation
-              sequence={[
-                // Same substring at the start will only be typed out once, initially
-                "Front-End Developer",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "MERN Stack Developer",
-                1000,
-                "React Native Developer",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              style={{ fontSize: "2em", display: "inline-block" }}
-              repeat={Infinity}
-            />
-          </p>
-        </div>
-        <div className="w-[50%] flex flex-col justify-center items-center">
-          <img src={Profile} className="w-[400px] h-400px]" alt="" />
-        </div>
-      </header> */}
+      
       {/* <Header /> */}
       <section className="w-[90%] mx-auto ">
         <h2 className="text-3xl mb-2 font-semibold">About Me</h2>
